@@ -1,2 +1,7 @@
-tab educ
-sqreg ability
+import random
+
+def generate_random_numbers(count, lower_bound, upper_bound):
+    return [random.randint(lower_bound, upper_bound) for _ in range(count)]
+
+random_numbers = generate_random_numbers(10, 1, 100)
+print("Random Numbers:", random_numbers)
